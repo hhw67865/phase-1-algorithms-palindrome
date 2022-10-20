@@ -1,14 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let wordLC = word.toLowerCase();
+  return wordLC === wordLC.split('').reverse().join('');
+
+  // for (let i=0; i<wordLC.length; i++) {
+  //   const string1 = wordLC.substr(i,1);
+  //   const string2 = wordLC.substr(wordLC.length-1-i,1);
+  //   if (string1 !== string2) {
+  //     return false;
+  //   }
+  // }
+  // return true;
+
 }
 
-/* 
-  Add your pseudocode here
-*/
-
-/*
-  Add written explanation of your solution here
-*/
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
